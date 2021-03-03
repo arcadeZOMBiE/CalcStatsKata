@@ -6,7 +6,7 @@ export class calcStats {
             total += element
         });
 
-        let output = {
+        return {
             min: input[0],
             max : input[input.length - 1],
             count : input.length,
@@ -14,6 +14,5 @@ export class calcStats {
             sum : total,
             oddOrEven : total % 2 ? 'odd' : 'even'
         }
-        return output
     }
 }
