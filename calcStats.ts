@@ -3,7 +3,7 @@ export class calcStats {
         let total = 0
         input = input.sort((a,b) => a - b)
         input.forEach(element => {
-            total = total + element
+            total += element
         });
 
         let output = {
